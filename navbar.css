@@ -1,0 +1,15 @@
+#navbar{
+    text-align:center;
+    
+}
+#navbar li{
+    border:2px solid black;
+    margin:5px;
+    display:inline-block;
+    background-color:#ccffcc;
+    padding:5px;
+    border-radius:15px;
+}
+#navbar li:hover{
+    background-color:pink;
+}

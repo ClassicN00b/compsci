@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="intweb.css" type="text/css" />
+</head>
+<body>
+    <center><h1>Survival Story</h1></center>
+    
+<div><b>Weapon:</b>
+    <div id="weapon">
+    </div>
+    </div>
+    <br>
+    <div><b>Medkit:</b>
+    <div id="medkit">
+    </div>
+    </div>    
+
+<!--this is the story part-->
+<div id="storyline"><center>
+    
+    <!--first event-->
+    <div id = event1>
+    <p id="prompt">There is a man and he is walking towards you. You feel nervous so you grab you knife ready. What do you do, talk or attack?</p>
+    <center><input id = choice1><button id="action">Action</button></center>
+    </div>
+    <!--second event-->
+    <div id=event2>
+    <p id= "prompt2">Its getting dark, you know that it will be dangerous walking at night since you don't have a flash light but staying may put you in danger. Do you stay? (yes/no)</p>
+    <center><input id = choice2><button id="action2">Action</button></center>
+    </div>
+    <!--third event-->
+    <div id=event3>
+        <!--third prompt is empty because it will change based on decisions-->
+    <p id= "prompt3"></p>
+    <center><input id = choice3><button id="action3">Action</button></center>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+    <div>
+    <center id="img"><img src="tip1.jpg" height = "200"></center>
+    
+    </div>
+    
+    <script type="text/javascript" src="intweb.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background-color: #EBB;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .5)
+}
+
+.closeLB {
+  color: red;
+  cursor: pointer;
+  position: relative;
+  right: 10px;
+  bottom:10px;
+}
+.lightbox .iframeContainer {
+  vertical-align: middle;
+  background: #CCC;
+  padding: 2px;
+}
+.lightbox.closed {
+  display: none;
+}
+
+.ads.closed{
+    display: none
+}
+
+.ad2{
+    margin-left: 800px;
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+.ad2.closed{
+    display: none;
+}
+
+.ad3{
+    position: relative;
+    left: 200px;
+    bottom: 300px;
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite;
+}
+.ad3.closed{
+    display: none;
+}
+
+
+.lightbox .iframeContainer {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+.ads{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+.closeLB{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

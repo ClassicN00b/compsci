@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style type="text/css">
+        #operator { border:none; text-align:center; display: inline-block; background-color:#ffffcc;}
+        body {background-color: #ccffcc;}
+        #calculate { text-align:center; display: inline-block; background-color: #80bfff; border-radius:10px;}
+        #num1{ height: 100px }
+        #num2{ height: 100px }
+        #operator{ height: 100px }
+        
+    </style>
+</head>
+<body>
+    <input id="num1">
+    <select id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input id="num2">
+    <button id="calculate">Calculate</button>
+    <div id="display">Answer</div>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
